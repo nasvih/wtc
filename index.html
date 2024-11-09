@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet to Cash</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #0a1f44;
+            color: #ffffff;
+            padding: 1.5em 0;
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 95%;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .trust-info {
+            margin: 20px 0;
+            font-size: 1.15em;
+            color: #0a1f44;
+            font-weight: 600;
+            line-height: 1.6;
+            border-top: 2px solid #d9d9d9;
+            border-bottom: 2px solid #d9d9d9;
+            padding: 10px 0;
+        }
+
+        .instructions, .conversion-info {
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #4a4a4a;
+            text-align: left;
+        }
+
+        .instructions {
+            font-weight: 500;
+            color: #1a3458;
+        }
+
+        .ticket-section {
+            background-color: #eceff4;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #364a63;
+            font-size: 1.05em;
+        }
+
+        /* Responsive Iframe */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            margin-top: 20px;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-top: 25px;
+            background-color: #0a1f44;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #082135;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            padding: 10px;
+            color: #555555;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            header {
+                font-size: 1.6em;
+                padding: 1.2em 0;
+            }
+            .iframe-container {
+                padding-bottom: 75%; /* 4:3 Aspect Ratio for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>Wallet to Cash</header>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Trust Information -->
+        <div class="trust-info">
+            <p>100% Trust • 100% Safe • 100% Assurance</p>
+            <p>Only 10% Fee</p>
+        </div>
+
+        <!-- Instructions Section -->
+        <div class="instructions">
+            <p><strong>How It Works:</strong></p>
+            <p>Select the ticket amount that matches how much you need to convert, then complete payment using your wallet. Ticket values range from 10 to 1000 rupees, so choose accordingly. Your cash will be credited to your account within 3 to 7 days.</p>
+        </div>
+
+        <!-- Conversion Info -->
+        <div class="conversion-info">
+            <p><strong>Note:</strong> Ensure all your details are correct to ensure the security and timely delivery of your funds.</p>
+        </div>
+
+        <!-- Ticket Section -->
+        <div class="ticket-section">
+            <h2>Choose Your Conversion Amount</h2>
+            <p>Select ticket values from 10 to 100000 rupees, then proceed with payment inside the window below.</p>
+        </div>
+
+        <!-- Responsive Iframe -->
+        <div class="iframe-container">
+            <iframe src="https://www.yepdesk.com/embed/buy-tickets/672f30c1c9e77c000126ac77/private/rm37ok3fq7"></iframe>
+        </div>
+
+        <!-- Contact Button -->
+        <a href="mailto:nasvih.va@gmail.com" class="contact-button">Contact Us for Any Queries</a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>&copy; 2024 Wallet to Cash. All rights reserved.</footer>
+
+</body>
+</html>
